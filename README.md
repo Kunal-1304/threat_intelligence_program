@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🛡️ Threat Intelligence Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **real-time cyber threat monitoring and analysis dashboard** built with **React, TailwindCSS, Recharts, and Lucide Icons**.  
+This project simulates **threat intelligence feeds**, provides **risk analysis, anomaly detection**, and includes features like **historical data trends, WhatsApp alerts, and dark mode**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+✅ **Real-Time Threat Simulation**  
+- Randomized threat data (IP, Country, Threat Type, Confidence Score).  
+- Supports filtering by **country, threat type, and time range**.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ **Threat Intelligence Analytics**  
+- **Pie Charts** for Threat Type Distribution.  
+- **Bar Charts** for Top Countries.  
+- **Line & Area Charts** for Historical Threat Trends.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **Machine Learning Inspired Risk Assessment**  
+- Confidence-based **anomaly detection** (low & high confidence treated as anomalies).  
+- High-risk identification.  
 
-### `npm test`
+✅ **Interactive Dashboard**  
+- 📅 Filter by 24 hours / 7 days / 30 days.  
+- 🌙 Dark Mode / ☀️ Light Mode toggle.  
+- 🔔 Real-time alert notifications.  
+- 📲 WhatsApp alert integration.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ **Modular & Scalable Architecture**  
+- Easy to extend with real APIs.  
+- Designed for future upgrades with minimal changes.  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
+ThreatDashboard/
+│── src/
+│ ├── components/
+│ │ └── ThreatDashboard.jsx # Main Dashboard Component
+│ ├── App.jsx
+│ ├── index.jsx
+│── public/
+│── package.json
+│── tailwind.config.js
+│── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yaml
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend:** React, TailwindCSS, Lucide-React  
+- **Charts:** Recharts (Pie, Bar, Line, Area Charts)  
+- **Alerts:** Custom notification system + WhatsApp integration  
+- **Styling:** Glassmorphism + Dark/Light Themes  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## ⚡ Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1️⃣ **Clone repo:**
+```bash
+git clone https://github.com/your-username/threat-dashboard.git
+cd threat-dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2️⃣ Install dependencies:
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+3️⃣ Run the app locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm run dev
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4️⃣ Open in browser:
+👉 http://localhost:5173
 
-### Advanced Configuration
+Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Screenshot 2025-10-03 164503.png
+Screenshot 2025-10-03 164521-1.png 
+Screenshot 2025-10-03 164447.png
 
-### Deployment
+WhatsApp Alerts Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click WhatsApp Setup in dashboard.
 
-### `npm run build` fails to minify
+Enter phone number with country code (e.g., 919876543210).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Alerts will be sent directly to WhatsApp via wa.me API.
+
+🧠 Future Upgrades
+
+🔗 Integrate real threat intelligence APIs (AlienVault OTX, VirusTotal, AbuseIPDB).
+
+🤖 Use ML models for actual anomaly detection.
+
+☁️ Deploy on cloud (AWS/GCP/Azure).
+
+🗄️ Store threat logs in MongoDB / PostgreSQL.
+
+👨‍💻 Author
+
+Made by Kunal Suresh Pawar
+
+📧 Contact: kunalpawar13042004@gmail.com
+
+🌍 GitHub: Kunal-1304
+
+📜 License
+
+This project is licensed under the MIT License.
